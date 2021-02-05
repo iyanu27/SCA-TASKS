@@ -1,1 +1,49 @@
+Task 1:Create 15 users in Linux
+
+useradd Lolade,ayo,sola,siji,dede,chichi,chi,mosun,kabir,jola,tola,yemi
+
+Create 3 groups
+groupadd HR
+groupadd Finance
+groupadd IT
+
+Assign 15 users across 3 group
+
+usermod -G HR lolade
+usermod -G Finance tola
+usermod -G IT kabir
+
+After assigning the users in different group we have as follows:
+
+HR:Funmi,Ayo,siji,lola,fola
+Finance:tola,Bunmi,Dede,Lolade,yemi
+IT:Kabir,mosun,chichi,chi,Akin
+
+
+Demonstrate that user(s) in a group cannot access files/folders that belong to another group unless they are added to that group
+
+First i created directory 'sales 2020','staff List',IT contact' by using the command Mkdir
+
+Changed the ownership of the file by using this command
+
+sudo chgrp HR 'Staff list' 
+sudo chgrp IT 'IT Contact' 
+sudo chgrp Finance 'Sales 2020' 
+
+
+After making the changes i used ls  -ltr to view the changes
+
+To deny other users from accessing the directory or files in a specific group i used
+
+chmod u-rwx 'Staff list'
+chmod u-rwx 'IT contact'
+chmod u-rwx 'Sales 2020'
+
+To give all access to the users that belong to the group
+sudo chmod g+rwx 'Staff list'
+sudo chmod g+rwx 'IT contact'
+sudo chmod g+rwx 'Sales 2020'
+
+
+
 
