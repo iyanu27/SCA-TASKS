@@ -16,10 +16,13 @@ To output the average age of male and female i used a bash script called scascri
 
 #!/bin/bash
 output=users.txt
+#This shows the content of  the users.txt file
 cat $output
+This shows the age of the users that are Male
 grep 'M' users.txt
 
 echo
+This shows the age of the users that are Female
 grep 'F' users.txt
 
 echo
