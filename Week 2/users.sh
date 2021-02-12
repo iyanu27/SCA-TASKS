@@ -16,6 +16,7 @@ awk '{
          END {
                 for (gender in age)
                  {
-                        print gender, age[gender], age[gender]/counter[gender]
+                         print "The Average age of  " gender, "is"  age[gender]/counter[gender]
+
                  }
                 }' users.txt
