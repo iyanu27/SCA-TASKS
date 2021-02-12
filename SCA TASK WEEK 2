@@ -38,4 +38,13 @@ awk '{
                  }
                 }' users.txt
 
+To run the script i used 
+./scascript 
 
+I got an error about permission denied and i was able to resolve the error by
+chmod u+x scascript
+
+After performing this error i was able to run the script and it worked successfully
+
+
+After performing this error i was able to run the script and it worked successfully
