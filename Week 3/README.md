@@ -14,4 +14,4 @@ Lets build the container by running the following command from /app folder
 
 To bring the containers down you can run the command 
 ## docker-compose down
-
+Check the application online with the ipaddress:80 that is accessible online
