@@ -1,0 +1,29 @@
+version: '2'
+services:
+  php:
+    image: recordapp-php
+    volumes:
+      - ./:/app
+    working_dir: /app
+  web:
+    image: recordapp-nginx
+    volumes:
+      - ./:/app
+    depends_on:
+      - php
+    ports:
+      - 80:80
+   
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-server-80
+    volumes:
+      - ./:/app
+      - dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=crud
+      - MYSQL_USER=db_user
+      - MYSQL_ROOT_PASSWORD=root
+    working_dir: /app
+volumes:
+  dbdata:

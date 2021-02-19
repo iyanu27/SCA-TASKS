@@ -1,0 +1,49 @@
+version: "3"
+services:
+  app:
+    build:
+      args:
+        user: iyanu
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: recordapp
+    container_name: recordapp-app
+    restart: unless-stopped 
+    working_dir: /var/www/iyanu
+    volumes:
+      - ./:/var/www/iyanu
+    networks:
+      - recordapp
+
+  db:
+    image: mysql:5.7
+    container_name: recordapp-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: crud
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_USER: root
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - recordapp
+
+  nginx:
+    image: nginx:alpine
+    container_name: recordapp-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www/iyanu
+      - ./docker-compose/nginx:/etc/nginx/default.conf/
+    networks:
+      - recordapp
+
+networks:
+  recordapp:
+    driver: bridge

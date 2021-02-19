@@ -1,0 +1,10 @@
+<?php
+	
+			$conn = new mysqli("mysql","root", "root","");
+			if(!$this->conn){
+				$this->error = "Fatal Error: Can't connect to database" . $this->connect->connect_error();
+				return false;
+			}
+		}
+	}	
+?>
