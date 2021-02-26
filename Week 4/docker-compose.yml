@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+
+  django:
+    build: ./django
+    container_name: django_con
+    restart: always
+    environment: 
+      - APP_NAME=django
+    ports:
+      - '8000:8000'
+
+  nestjs:
+    build: ./nestjs
+    container_name: nestjs_con
+    restart: always
+    environment: 
+       - APP_NAME=nestjs
+    ports:
+      - '5000:5000'
+    env_file:
+     - .env
+
+  nginx:
+    build: ./nginx
+    container_name: nginx 
+    restart: always
+    ports:
+     - "8080:80"
+
+  database:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    env_file:
+      - .env
+    volumes:
+      - ~/database/nest:/var/lib/mysql
