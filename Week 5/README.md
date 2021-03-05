@@ -10,12 +10,12 @@
   4. Scroll to the bottom of the list, and add the following lines: deb https://pkg.jenkins.io/debian binary.Save and exit
   5. Install Jenkins : sudo apt update and sudo apt install Jenkins
   6. To check Jenkins was installed and is running enter: sudo systemctl status jenkins
-  ;;;;image 
-  7. Modify Firewall to Allow Jenkins : sudo ufw allow 8080
-  8. To launch and set up Jenkins, open a web browser, and navigate to the IP address of your server: http://ip_address_or_domain:8080
-  9. You should see a page that prompts you to Unlock Jenkins. You’ll need the default password. You can get the default password by switching to a command line and entering the following:  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-  10. The system returns an alphanumeric code. Enter that code, then click Continue.Install neccessary plugins and create the first user
-  11. You are now ready to use Jenkins
+  7.  <img width="466" alt="jenkins" src="https://user-images.githubusercontent.com/57386428/110116923-101a5300-7d6d-11eb-8d90-6f692d75bdb7.PNG">
+  8. Modify Firewall to Allow Jenkins : sudo ufw allow 8080
+  9. To launch and set up Jenkins, open a web browser, and navigate to the IP address of your server: http://ip_address_or_domain:8080
+  10. You should see a page that prompts you to Unlock Jenkins. You’ll need the default password. You can get the default password by switching to a command line and entering the following:  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  11. The system returns an alphanumeric code. Enter that code, then click Continue.Install neccessary plugins and create the first user
+  12. You are now ready to use Jenkins
 
 ## Java application 
 
@@ -26,12 +26,12 @@ Clone this repository : https://github.com/iyanu27/store-webapp-sample.git
 ## After cloning the repository  we need to 'Build job when a change is pushed to GitHub' under the 'Build Triggers' section of the jenkins
 
     1.on GitHub go to your project page, and click on the Settings menu in the header (must have admin access). In the left sidebar of that page click 'webooks'.
-    2.Click add webhook 
-    3.Add the callback URL of your jenkins server (leave that page open for later). Something like :
-
-     http://jenkins.example.com:8080/github-webhook/ and application/json
-
+    2. Click add webhook
+    3. Add the callback URL of your jenkins server (leave that page open for later). Something like :
+      http://jenkins.example.com:8080/github-webhook/ and application/json
     4. You will get a message if it was ping was successfully
+    
+<img width="891" alt="github webhook" src="https://user-images.githubusercontent.com/57386428/110117289-8028d900-7d6d-11eb-8f50-54ea72d48f02.PNG"> 
 
 ## Let us get started with our build job on Jenkins
     1. Login to the Jenkins Dashboard
@@ -52,38 +52,6 @@ Clone this repository : https://github.com/iyanu27/store-webapp-sample.git
      12. Save and Apply
      13. Click build now if the build is successfully the App should be deployed to heroku
      14. Application dasboard on heroku..heroku image
-     15.
 
-
- 
- 
-
-
-
-
-# Store Web application sample 
-
-# Running it
-
-## Locally
-
-If you have [Maven 3](http://maven.apache.org/) installed, you can clone the repository and run it locally:
-
-    mvn seedstack:run
-
-## On Heroku
-
-Or you can just deploy it on your own Heroku account by clicking this button:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-##With Jenkins
-
-Github repro: https://github.com/iyanu27/store-webapp-sample.git
-
-# Usage
-
-Just point your favorite browser to the base URL.
-**Note that the application is secured with basic authentication. Use demo/demo credentials to log in.**
 
 
