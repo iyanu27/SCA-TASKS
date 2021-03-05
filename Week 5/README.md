@@ -50,7 +50,7 @@ Clone this repository : https://github.com/iyanu27/store-webapp-sample.git
      8. In the 'Build Triggers' section, Select 'GitHub hook trigger for GITScm polling'
      9. In Build,Add the build step >Execute shell command: mvn clean package,git checkout master
      10. In Build ,Add build step > Invoke top level Maven targets :Maven Version:Default and goals:clean install
-     11. In Post-build Actions > Git publisher > click Push Only If Build Succeeds and add the branch :Branch to push-master and Target remote name:heroku
+     11. In Post-build Actions > Git publisher > click Push Only If Build Succeeds and add the branch :Branch to push: master and Target remote name:heroku
      12. Save and Apply
      13. Click build now if the build is successfully the App should be deployed to heroku
      14. Application dasboard on heroku..heroku image
