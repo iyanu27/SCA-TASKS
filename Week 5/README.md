@@ -58,6 +58,7 @@ Clone this repository : https://github.com/iyanu27/store-webapp-sample.git
    <img width="583" alt="git pub" src="https://user-images.githubusercontent.com/57386428/110119606-e8c58500-7d70-11eb-8e32-4542bd8367e9.PNG">
    <img width="472" alt="build success" src="https://user-images.githubusercontent.com/57386428/110119077-21189380-7d70-11eb-876d-2accb9185cd7.PNG">
    <img width="848" alt="heroku" src="https://user-images.githubusercontent.com/57386428/110117751-27a60b80-7d6e-11eb-952f-98fda91ba793.PNG">
+   <img width="755" alt="final app" src="https://user-images.githubusercontent.com/57386428/110119966-4ce84900-7d71-11eb-8932-c0127a61da1a.PNG">
    
 
 
