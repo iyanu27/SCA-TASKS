@@ -1,4 +1,6 @@
-## This week task is Automatic deployment of any application(Java) using any CI tool(Jenkins) to Heroku(PAAS),i choose Jenkins
+### This week task is Automatic deployment of any application(Java) using any CI tool(Jenkins) to Heroku(PAAS)
+
+We have various Continuous Integration tools such as Travis CI,Circle CI and Jenkins I decided to use Jenkins for the Automation 
 
 # What is Jenkins?
  It is self-contained open source automation server which can be used to automate all sorts of tasks such as building,testing and deploying software. Jenkins requires the Java Runtime Environment (JRE). 
@@ -52,6 +54,11 @@ Clone this repository : https://github.com/iyanu27/store-webapp-sample.git
      12. Save and Apply
      13. Click build now if the build is successfully the App should be deployed to heroku
      14. Application dasboard on heroku..heroku image
+   <img width="698" alt="SCM" src="https://user-images.githubusercontent.com/57386428/110118672-8f108b00-7d6f-11eb-8ead-94715d45deb2.PNG">
+   <img width="472" alt="build success" src="https://user-images.githubusercontent.com/57386428/110119077-21189380-7d70-11eb-876d-2accb9185cd7.PNG">
+   <img width="848" alt="heroku" src="https://user-images.githubusercontent.com/57386428/110117751-27a60b80-7d6e-11eb-952f-98fda91ba793.PNG">
+   
+
 
 
 
