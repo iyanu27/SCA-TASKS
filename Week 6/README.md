@@ -22,6 +22,9 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
  
  ## Subnetting 
  A subnet is a range of IP addresses within a network that are reserved so that they're not available to everyone within the network, essentially dividing part of the network for private use
+ 
+Public subnet is a subnet that has internet access
+Private subnet is a subnet that has no internet access
 
 ## Firewall rules
 A firewall rule can be applied to traffic from the Internet to your computer (inbound), or from your computer to the Internet (outbound). A rule can also be applied to both directions at the same time.
@@ -29,4 +32,10 @@ A firewall rule can be applied to traffic from the Internet to your computer (in
 The firewall protects your computer by allowing safe Internet traffic and blocking unsafe traffic.
 
 ## Bastion hosts
+This is a server whose purpose is to provide access to private network  from  an external network such as internet,allows ssh connection.
+
+
+
+
+
 
