@@ -33,16 +33,11 @@
         state: absent
       notify: Reload Nginx
 
-<<<<<<< HEAD
-# MySQL Configuration
-    
-=======
->>>>>>> 35eeb7ab7ea4fa29c42305b0abeb62041390797f
+
 
 # UFW Configuration
    
 
-<<<<<<< HEAD
 # Add  PHP Index Page
     - name: Add  PHP Index Page
       copy:
@@ -54,7 +49,6 @@
       template:
         src: "files/index.php"
         dest: "/var/www/html/index.php"
->>>>>>> 35eeb7ab7ea4fa29c42305b0abeb62041390797f
 
   handlers:
     - name: Reload Nginx
