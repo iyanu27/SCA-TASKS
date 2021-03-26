@@ -1,6 +1,4 @@
-##################################################
-# DO Community Playbooks: LEMP on Ubuntu 18.04
-##################################################
+
 ---
 - hosts: all
   become: true
@@ -35,17 +33,28 @@
         state: absent
       notify: Reload Nginx
 
+<<<<<<< HEAD
 # MySQL Configuration
     
+=======
+>>>>>>> 35eeb7ab7ea4fa29c42305b0abeb62041390797f
 
 # UFW Configuration
    
 
+<<<<<<< HEAD
 # Add  PHP Index Page
     - name: Add  PHP Index Page
       copy:
         src: "files/html/"
         dest: "/var/www/html/"
+=======
+# Add Up PHP Index Page
+    - name: Add Up PHP Index Page
+      template:
+        src: "files/index.php"
+        dest: "/var/www/html/index.php"
+>>>>>>> 35eeb7ab7ea4fa29c42305b0abeb62041390797f
 
   handlers:
     - name: Reload Nginx
