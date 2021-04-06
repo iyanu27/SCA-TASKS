@@ -1,4 +1,4 @@
-# Automating a GCP VM with Terraform
+# Automating a GCP SQL Database in a Private Subnet with Terraform
 
 ## Requirements
 1. Google Cloud Platform(GCP) Project
