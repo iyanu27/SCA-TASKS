@@ -56,4 +56,11 @@ A GCP project can have up to five VPC networks, and each Compute Engine instance
     + You should now see `Apply complete! Resources: 2 added, 0 changed, 0 destroyed.`
     + From the GCP console you can see your newly created VM instance, substituting <PROJECT_ID>: 
     `https://console.cloud.google.com/compute/instances?project=<PROJECT_ID>` 
-
+9. After that go to connect and paste the following on cloud shell
+  
+    gcloud container clusters get-credentials my-first-gke-cluster --zone us-west1-a --project keen-clarity-309414
+10. Then install kubectl
+    sudo apt-get install kubectl
+ 11. Then run the following to get the node
+      kubectl get node
+      <img width="838" alt="gke" src="https://user-images.githubusercontent.com/57386428/113719550-94306500-96a2-11eb-9fc4-288898f56c5a.PNG">
