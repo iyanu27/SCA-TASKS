@@ -68,11 +68,11 @@ resource "google_service_networking_connection" "private_vpc_connection" {
   reserved_peering_ranges = [google_compute_global_address.private_ip_block.name]
 }
   ```
-6. For SQL database copy the db.tf file
+6. To create the  SQL database with Terraform in a Private subnet copy the "db.tf" file
 
-6. `$ terraform init`
+7. `$ terraform init`
     + You should now see `Terraform has been successfully initialized!`
-7. `$ terraform apply` and enter 'yes' to continue.
+8. `$ terraform apply` and enter 'yes' to continue.
     + You should now see `Apply complete! Resources: 2 added, 0 changed, 0 destroyed.`
     + From the GCP console you can see your newly created SQL instance, substituting <PROJECT_ID>: 
     `https://console.cloud.google.com/compute/instances?project=<PROJECT_ID>` 
