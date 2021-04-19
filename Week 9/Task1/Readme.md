@@ -87,3 +87,7 @@ resource "google_service_networking_connection" "private_vpc_connection" {
 ![image](https://user-images.githubusercontent.com/57386428/115313438-1e0f1200-a128-11eb-8065-83ea28d26494.png)
 
 ![image](https://user-images.githubusercontent.com/57386428/115313970-2025a080-a129-11eb-99d7-3f167c3f63c6.png)
+
+Refrences:
+----------
+https://www.youtube.com/watch?v=IbK7trf1DHU
