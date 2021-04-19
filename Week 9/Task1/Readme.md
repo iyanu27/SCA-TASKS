@@ -85,3 +85,5 @@ resource "google_service_networking_connection" "private_vpc_connection" {
 11.To connect to my db,I used the command  mysql --host=172.16.224.3   --user=Iyanu --password
 
 ![image](https://user-images.githubusercontent.com/57386428/115313438-1e0f1200-a128-11eb-8065-83ea28d26494.png)
+
+![image](https://user-images.githubusercontent.com/57386428/115313970-2025a080-a129-11eb-99d7-3f167c3f63c6.png)
