@@ -76,4 +76,12 @@ resource "google_service_networking_connection" "private_vpc_connection" {
     + You should now see `Apply complete! Resources: 2 added, 0 changed, 0 destroyed.`
     + From the GCP console you can see your newly created SQL instance, substituting <PROJECT_ID>: 
     `https://console.cloud.google.com/compute/instances?project=<PROJECT_ID>` 
+9.To test if i can connect to the db i made sure the SQL databse and the VM accessing it  is on the same network default
+![image](https://user-images.githubusercontent.com/57386428/115313560-5adb0900-a128-11eb-934c-832ec3f2c874.png)
 
+![image](https://user-images.githubusercontent.com/57386428/115313650-83fb9980-a128-11eb-9afc-bcc58a32558f.png)
+
+
+11.To connect to my db,I used the command  mysql --host=172.16.224.3   --user=Iyanu --password
+
+![image](https://user-images.githubusercontent.com/57386428/115313438-1e0f1200-a128-11eb-8065-83ea28d26494.png)
